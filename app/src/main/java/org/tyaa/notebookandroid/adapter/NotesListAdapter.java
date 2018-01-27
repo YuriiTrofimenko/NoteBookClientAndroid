@@ -58,7 +58,7 @@ public class NotesListAdapter extends ArrayAdapter<Order> {
                // Toast.makeText(mContext, mOrders.get(position).getCustomer(), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(mContext, OrderDetailsActivity.class);
                 intent.putExtra("details",mOrders.get(position).getText());
-                ((MainActivity) mContext).startActivityForResult(intent,0);
+                ((MainActivity) mContext).startActivityForResult(intent, MainActivity.DETAILS_REQUEST);
             }
         });
 
